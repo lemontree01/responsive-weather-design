@@ -1,0 +1,169 @@
+* {
+    margin:0;
+    padding:0;
+}
+
+html, body {
+    height: 100%;
+}
+
+img{
+    width: 50px;
+}
+
+body {  
+    margin-top: 50px;
+    width: 100%;
+    height: calc(100vh - 50px);
+    background: linear-gradient(180deg, rgba(43,51,178,1) 0%, rgba(22,128,201,1) 100%);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+
+header, #weather_now, #weather_today, footer {
+    width: 1200px;
+}
+
+#city {
+    font-size: 50px;
+}
+
+#weather_now {
+    margin: 0px 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+#figure_now {
+   /* border-right: 1px solid white;*/
+    width: 120px;
+    
+}
+#figure_now > img {
+    margin: 10px auto;
+    position: relative;
+    width: 100px;
+}
+
+#left {
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+    border-right: 1px solid white;
+    margin-left: 20px;
+}
+#temperature_now {
+    font-size: 60px;
+    margin-left: 30px;
+    font-weight: 100;
+}
+#sub{
+    font-weight: 100;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+#details_now {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+
+.detail {
+    width: 33%;
+}
+
+.detail > article {
+    text-align: center;
+    font-size: 15px;
+}
+
+.main_text {
+    font-weight: 100;
+    font-size: 25px;
+}
+
+#weather_today{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-self: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.icon {
+    font-weight: 400;
+    font-size: 30px;
+    padding: 40px 30px;
+    background-color: rgba(29, 71, 160);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.icon > img {
+    margin: 10px;
+}
+
+footer{
+    position: relative;
+    text-align: center;
+    top: 100px;
+
+}
+
+@media only screen and (max-width: 1300px) {
+    header, #weather_now, #weather_today, footer {
+        width: 1000px;
+    
+    }
+} 
+
+@media only screen and (max-width: 1100px) {
+
+    body{
+        height: calc(100vh - 500px);
+    }
+    header, #weather_now, #weather_today, footer {
+        width: 1000px;
+    }
+   
+    #weather_now {
+        margin: 0px 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #left {
+        justify-content: center;
+        border-right: none;
+        width: auto;
+        border-bottom: 1px solid white;
+    }
+    header {
+        text-align: center;
+    }
+   
+    #weather_today{
+        width: 500px;
+    }
+
+    #details_now {
+        display: flex;
+        flex-wrap: wrap;
+        width: 50%;
+        align-self: center;
+        justify-content: center;
+    }
+}
+
+
+
+
